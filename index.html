@@ -33,6 +33,40 @@
         font-weight: bold;
         margin-bottom: 18px;
     }
+
+    /* --- QR 画像（ボタン風） --- */
+    .qr-btn {
+        width: 70%;
+        max-width: 260px;
+        border-radius: 15px;
+        border: 2px solid #28a745;
+        padding: 10px;
+        background: #eaffea;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    .qr-btn:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* --- LINE追加ボタン --- */
+    .line-add-btn {
+        display: inline-block;
+        background: #28a745;
+        color: white;
+        font-size: 18px;
+        padding: 12px 22px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+        transition: 0.2s;
+    }
+    .line-add-btn:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
 </style>
 </head>
 
@@ -40,22 +74,23 @@
 
 <div class="container">
 
-    <!-- CTA Button at the TOP -->
     <a class="btn" href="https://youtu.be/dtB9o2y8hms?si=Sc5CUJwuyEG5tVCL" target="_blank">
         ▶ 50% OFF — Watch Full Video
     </a>
 
-    <!-- Custom Thumbnail (50% OFF Image) -->
     <a href="https://youtu.be/dtB9o2y8hms?si=Sc5CUJwuyEG5tVCL" target="_blank">
-        <img src="images/50%off.png" alt="50% OFF Thumbnail">
+        <img src="images/kare2.png" alt="50% OFF Thumbnail">
     </a>
 
-    <!-- Local PNG (kare.png) -->
-    <img src="images/kare.png" alt="Kare Image">
+    <!-- QR画像 ボタン風 -->
+    <a href="https://line.me/ti/p/yourlink" target="_blank">
+        <img src="images/lineqr.jpg" class="qr-btn" alt="LINE QR">
+    </a>
 
     <!-- LINE追加 ボタン -->
-    <a class="btn" href="tel:08036587962">
-        📞 LINE追加 / Call 080-3658-7962
+    <br>
+    <a href="https://line.me/ti/p/yourlink" class="line-add-btn" target="_blank">
+        LINE追加
     </a>
 
 </div>
